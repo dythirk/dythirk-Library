@@ -55,7 +55,7 @@ public class AuthorDAO {
             String sql = "INSERT INTO author (name) VALUES (?)" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
-            preparedStatement.setString(1, 'murasaki shikubu');
+            preparedStatement.setString(1, "murasaki shikubu");
             
             preparedStatement.executeUpdate();
             ResultSet pkeyResultSet = preparedStatement.getGeneratedKeys();
